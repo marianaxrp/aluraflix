@@ -32,11 +32,13 @@ function VideoCardGroup({
 
           return (
             <li key={video.titulo}>
-              <VideoCard
-                videoTitle={video.titulo}
-                videoURL={video.url}
-                categoryColor={categoryColor}
-              />
+              <div style={{ width: '100%', overflow: 'hidden' }}>
+                <VideoCard
+                  videoTitle={video.titulo}
+                  videoURL={video.url}
+                  categoryColor={categoryColor}
+                />
+              </div>
             </li>
           );
         })}
